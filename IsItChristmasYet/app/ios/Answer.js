@@ -8,10 +8,11 @@ const Answer = (props) => {
   const {getDates, isItTime} = props.data
   const {start} = getDates()
   const today = moment()
+  const fontSize = isItTime() ? 150 : 75
 
   return (
     <View>
-      <Text style={styles.answer}>
+      <Text style={getStyle(fontSize)}>
         {
           isItTime() ? 'Yes' : 'No'
         }
@@ -23,14 +24,14 @@ const Answer = (props) => {
   )
 }
 
-const styles = StyleSheet.create({
-  answer: {
+const getStyle = (fontSize) => {
+  return {
     color: '#FFF',
-    fontSize: 120,
+    fontSize,
     fontFamily: 'American Typewriter',
     textAlign: 'center',
     marginBottom: 5,
-  }
-})
+   }
+}
 
 export default Answer

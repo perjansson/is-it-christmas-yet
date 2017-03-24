@@ -13,6 +13,7 @@ const DaysLeft = (props) => {
 
 const styles = StyleSheet.create({
   daysLeft: {
+    marginTop: 5,
     color: '#FFF',
     fontSize: 16,
     fontFamily: 'American Typewriter',
