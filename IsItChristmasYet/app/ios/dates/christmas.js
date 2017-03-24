@@ -15,7 +15,7 @@ const getDates = () => {
 const isItTime = () => today.isBetween(getDates().start, getDates().end)
 
 const getQuestion = () => {
-  return 'Is it christmas yet?'
+  return 'Is it Christmas yet?'
 }
 
 const getBackgroundColor = () => {

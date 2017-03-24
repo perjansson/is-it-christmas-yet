@@ -17,7 +17,7 @@ const getDates = () => {
 const isItTime = () => moment().isLeapYear()
 
 const getQuestion = () => {
-  return 'Is it leap year yet?'
+  return 'Is it a leap year yet?'
 }
 
 const getBackgroundColor = () => {
