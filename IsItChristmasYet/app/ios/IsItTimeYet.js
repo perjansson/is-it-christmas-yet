@@ -25,9 +25,7 @@ class IsItTimeYet extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => {
-      this.forceUpdate();
-    }, 3000)
+    this.interval = setInterval(() => this.forceUpdate(), 3000)
   }
 
   componentWillUnmount() {
